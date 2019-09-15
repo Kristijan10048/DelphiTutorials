@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C51DFD01-E54D-4F8C-9124-840EE80A4255}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="calc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\CiklicnoPomestuvanje\ciklicno_pomest.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="calc">
+        <MSBuild Projects="calc.dproj"/>
+    </Target>
+    <Target Name="calc:Clean">
+        <MSBuild Projects="calc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="calc:Make">
+        <MSBuild Projects="calc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ciklicno_pomest">
+        <MSBuild Projects="..\CiklicnoPomestuvanje\ciklicno_pomest.dproj"/>
+    </Target>
+    <Target Name="ciklicno_pomest:Clean">
+        <MSBuild Projects="..\CiklicnoPomestuvanje\ciklicno_pomest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ciklicno_pomest:Make">
+        <MSBuild Projects="..\CiklicnoPomestuvanje\ciklicno_pomest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="calc;ciklicno_pomest"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="calc:Clean;ciklicno_pomest:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="calc:Make;ciklicno_pomest:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
