@@ -50,12 +50,12 @@ object Enigma2: TEnigma2
     TabOrder = 2
     OnClick = m_btnStartClick
   end
-  object A: TButton
+  object m_btnA: TButton
     Left = 200
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'A'
+    Caption = 'm_btnA'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -63,14 +63,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 3
-    OnClick = AClick
+    OnClick = m_btnAClick
   end
-  object B: TButton
+  object m_btnB: TButton
     Left = 400
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'B'
+    Caption = 'm_btnB'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -78,14 +78,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 4
-    OnClick = BClick
+    OnClick = m_btnBClick
   end
-  object X: TButton
+  object m_btnX: TButton
     Left = 280
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'X'
+    Caption = 'm_btnX'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -93,14 +93,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 5
-    OnClick = XClick
+    OnClick = m_btnXClick
   end
-  object W: TButton
+  object m_btnW: TButton
     Left = 216
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'W'
+    Caption = 'm_btnW'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -108,14 +108,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 6
-    OnClick = WClick
+    OnClick = m_btnWClick
   end
-  object E: TButton
+  object m_btnE: TButton
     Left = 256
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'E'
+    Caption = 'm_btnE'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -123,14 +123,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 7
-    OnClick = EClick
+    OnClick = m_btnEClick
   end
-  object R: TButton
+  object m_btnR: TButton
     Left = 296
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'R'
+    Caption = 'm_btnR'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -138,14 +138,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 8
-    OnClick = RClick
+    OnClick = m_btnRClick
   end
-  object T: TButton
+  object m_btnT: TButton
     Left = 336
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'T'
+    Caption = 'm_btnT'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -153,14 +153,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 9
-    OnClick = TClick
+    OnClick = m_btnTClick
   end
-  object Y: TButton
+  object m_btnY: TButton
     Left = 376
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'Y'
+    Caption = 'm_btnY'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -168,14 +168,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 10
-    OnClick = YClick
+    OnClick = m_btnYClick
   end
-  object Q: TButton
+  object m_btnQ: TButton
     Left = 176
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'Q'
+    Caption = 'm_btnQ'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -183,14 +183,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 11
-    OnClick = QClick
+    OnClick = m_btnQClick
   end
-  object U: TButton
+  object m_btnU: TButton
     Left = 416
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'U'
+    Caption = 'm_btnU'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -198,14 +198,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 12
-    OnClick = UClick
+    OnClick = m_btnUClick
   end
-  object I: TButton
+  object m_btnI: TButton
     Left = 456
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'I'
+    Caption = 'm_btnI'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -213,14 +213,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 13
-    OnClick = IClick
+    OnClick = m_btnIClick
   end
-  object O: TButton
+  object m_btnO: TButton
     Left = 496
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'O'
+    Caption = 'm_btnO'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -228,14 +228,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 14
-    OnClick = OClick
+    OnClick = m_btnOClick
   end
-  object P: TButton
+  object m_btnP: TButton
     Left = 536
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'P'
+    Caption = 'm_btnP'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -243,14 +243,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 15
-    OnClick = PClick
+    OnClick = m_btnPClick
   end
-  object S: TButton
+  object m_btnS: TButton
     Left = 240
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'S'
+    Caption = 'm_btnS'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -258,14 +258,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 16
-    OnClick = SClick
+    OnClick = m_btnSClick
   end
-  object D: TButton
+  object m_btnD: TButton
     Left = 280
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'D'
+    Caption = 'm_btnD'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -273,7 +273,7 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 17
-    OnClick = DClick
+    OnClick = m_btnDClick
   end
   object m_btnKeyH: TButton
     Left = 400
@@ -305,12 +305,12 @@ object Enigma2: TEnigma2
     TabOrder = 19
     OnClick = m_btnKeyJClick
   end
-  object K: TButton
+  object m_btnK: TButton
     Left = 480
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'K'
+    Caption = 'm_btnK'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -318,14 +318,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 20
-    OnClick = KClick
+    OnClick = m_btnKClick
   end
-  object L: TButton
+  object m_btnL: TButton
     Left = 520
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'L'
+    Caption = 'm_btnL'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -333,14 +333,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 21
-    OnClick = LClick
+    OnClick = m_btnLClick
   end
-  object F: TButton
+  object m_btnF: TButton
     Left = 320
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'F'
+    Caption = 'm_btnF'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -348,14 +348,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 22
-    OnClick = FClick
+    OnClick = m_btnFClick
   end
-  object G: TButton
+  object m_btnG: TButton
     Left = 360
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'G'
+    Caption = 'm_btnG'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -363,14 +363,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 23
-    OnClick = GClick
+    OnClick = m_btnGClick
   end
-  object Z: TButton
+  object m_btnZ: TButton
     Left = 241
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'Z'
+    Caption = 'm_btnZ'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -378,14 +378,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 24
-    OnClick = ZClick
+    OnClick = m_btnZClick
   end
-  object C: TButton
+  object m_btnC: TButton
     Left = 320
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'C'
+    Caption = 'm_btnC'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -393,14 +393,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 25
-    OnClick = CClick
+    OnClick = m_btnCClick
   end
-  object V: TButton
+  object m_btnV: TButton
     Left = 360
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'V'
+    Caption = 'm_btnV'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -408,14 +408,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 26
-    OnClick = VClick
+    OnClick = m_btnVClick
   end
-  object N: TButton
+  object m_btnN: TButton
     Left = 440
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'N'
+    Caption = 'm_btnN'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -423,14 +423,14 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 27
-    OnClick = NClick
+    OnClick = m_btnNClick
   end
-  object M: TButton
+  object m_btnM: TButton
     Left = 480
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'M'
+    Caption = 'm_btnM'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -438,7 +438,7 @@ object Enigma2: TEnigma2
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 28
-    OnClick = MClick
+    OnClick = m_btnMClick
   end
   object StaticText1: TStaticText
     Left = 24
@@ -496,15 +496,15 @@ object Enigma2: TEnigma2
     ParentFont = False
     TabOrder = 32
   end
-  object StaticText5: TStaticText
+  object m_lblOutputText: TStaticText
     Left = 24
-    Top = 248
+    Top = 242
     Width = 94
     Height = 24
     Caption = 'Output text'
     TabOrder = 33
   end
-  object StaticText6: TStaticText
+  object m_lblInputText: TStaticText
     Left = 24
     Top = 176
     Width = 86
@@ -521,23 +521,23 @@ object Enigma2: TEnigma2
     DragMode = dmAutomatic
     TabOrder = 35
   end
-  object sifriranje: TRadioButton
+  object m_rbxEncr: TRadioButton
     Left = 29
     Top = 132
     Width = 89
     Height = 17
     Caption = 'Encrypt'
     TabOrder = 0
-    OnClick = sifriranjeClick
+    OnClick = m_rbxEncrClick
   end
-  object desif: TRadioButton
+  object m_rbxDecr: TRadioButton
     Left = 29
     Top = 109
     Width = 89
     Height = 17
     Caption = 'Decrypt'
     TabOrder = 1
-    OnClick = desifClick
+    OnClick = m_rbxDecrClick
   end
   object texvl: TEdit
     Left = 24
