@@ -21,6 +21,9 @@ type
   /// <see cref="EArgumentNilException"/>
   /// </remarks>
   TEnigma2 = class(TForm)
+
+    {$Region 'UI Members'}
+
     Label1: TLabel;
     Label2: TLabel;
     m_btnStart: TButton;
@@ -46,8 +49,9 @@ type
     m_btnNum8: TButton;
     m_btnNum9: TButton;
     m_btnNum0: TButton;
+    {$endregion}
 
-    {$region 'Procedures'}
+    {$region 'UI Callbacks'}
 
     procedure m_btnStartClick(Sender: TObject);
     procedure m_btnAClick(Sender: TObject);
@@ -92,7 +96,7 @@ type
     procedure m_btnNum9Click(Sender: TObject);
     procedure m_btnNum0Click(Sender: TObject);
 
-     {$endregion}
+   {$endregion}
   private
     { Private declarations }
   public
@@ -102,29 +106,34 @@ const
   s0='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
   s1='M5NB1V2CXZ3AS4DFGH7JK8L9POI6UYTR_E0WQ';
 var
+
+  {$Region 'Global variables'}
   Enigma2: TEnigma2;
 
-  str,str1:string[37];
-  textvl,encr,decr:string;
-  pom,pom1:char;
-  i,j,k,poz:integer;
+  str, str1 : String;
+  textvl,encr,decr:String;
+  pom,pom1:String;
+  poz:integer;
   sd:boolean;
+  {$endregion}
 implementation
 
 {$R *.dfm}
 procedure rot(v:char);
+var
+  i,j,k,poz:integer;
 begin
 if sd=true then
         begin
          pom := str[1];
          for i := 1 to 36 do
           str[i] := str[i + 1];
-         str[37]:=pom;
+         str[37]:=pom.Chars[1];
 
          pom:=str1[37];
          for i:=37 downto 2 do
           str1[i]:=str1[i-1];
-         str1[1]:=pom;
+         str1[1]:=pom.Chars[1];
 
          poz := 1;
          for i:=1 to 37 do
@@ -132,23 +141,29 @@ if sd=true then
             poz:=i;
 end;
 
-if sd=false then
+if (sd = false) then
         begin
          pom:=str1[1];
          for i:=1 to 36 do
-         str1[i]:=str1[i+1];
-         str1[37]:=pom;
+          str1[i]:=str1[i+1];
+         str1[37]:=pom.Chars[1];
 
          pom:=str[37];
          for i:=37 downto 2 do
-         str[i]:=str[i-1];
-         str[1]:=pom;
+          str[i]:=str[i-1];
+         str[1]:=pom.Chars[1];
 
          poz:=1;
          for i:=1 to 37 do
          if str[i]=v then poz:=i;
        end;
 
+end;
+
+procedure TEnigma2.FormCreate(Sender: TObject);
+begin
+  //TODO:Init form
+  //ShowMessage('Enigma by Kris');
 end;
 
 {$region 'Buttons Callbacks'}
@@ -547,11 +562,6 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.FormCreate(Sender: TObject);
-begin
-  showmessage('Enigma by Kris');
-end;
-
 procedure TEnigma2.m_btnSpaceClick(Sender: TObject);
 begin
 rot('_');
@@ -573,6 +583,20 @@ if sd=true then
 begin
         str:='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
         str1:='M5NB1V2CXZ3AS4DFGH7JK8L9POI6UYTR_E0WQ';
+
+        encr:='';
+        label1.Caption:=str;
+        label2.Caption:=str1;
+
+        texiz.Text:='';
+        texvl.Text:='';
+        textvl:='';
+end;
+if sd = false then
+begin
+        str1:='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
+        str:='M5NB1V2CXZ3AS4DFGH7JK8L9POI6UYTR_E0WQ';
+
         encr:='';
         label1.Caption:=str;
         label2.Caption:=str1;
@@ -580,17 +604,6 @@ begin
         texvl.Text:='';
         textvl:='';
 end;
-if sd=false then
-begin
-        str1:='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
-        str:='M5NB1V2CXZ3AS4DFGH7JK8L9POI6UYTR_E0WQ';
-        encr:='';
-        label1.Caption:=str;
-        label2.Caption:=str1;
-        texiz.Text:='';
-        texvl.Text:='';
-        textvl:='';
-end;        
 
 end;
 

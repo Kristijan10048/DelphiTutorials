@@ -55,7 +55,7 @@ object Enigma2: TEnigma2
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'm_btnA'
+    Caption = 'A'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -70,7 +70,7 @@ object Enigma2: TEnigma2
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'm_btnB'
+    Caption = 'B'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -85,7 +85,7 @@ object Enigma2: TEnigma2
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'm_btnX'
+    Caption = 'X'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -100,7 +100,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnW'
+    Caption = 'W'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -115,7 +115,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnE'
+    Caption = 'E'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -130,7 +130,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnR'
+    Caption = 'R'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -145,7 +145,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnT'
+    Caption = 'T'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -160,7 +160,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnY'
+    Caption = 'Y'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -175,7 +175,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnQ'
+    Caption = 'Q'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -190,7 +190,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnU'
+    Caption = 'U'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -205,7 +205,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnI'
+    Caption = 'I'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -220,7 +220,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnO'
+    Caption = 'O'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -235,7 +235,7 @@ object Enigma2: TEnigma2
     Top = 52
     Width = 33
     Height = 25
-    Caption = 'm_btnP'
+    Caption = 'P'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -250,7 +250,7 @@ object Enigma2: TEnigma2
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'm_btnS'
+    Caption = 'S'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -265,7 +265,7 @@ object Enigma2: TEnigma2
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'm_btnD'
+    Caption = 'D'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -310,7 +310,7 @@ object Enigma2: TEnigma2
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'm_btnK'
+    Caption = 'K'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -325,7 +325,7 @@ object Enigma2: TEnigma2
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'm_btnL'
+    Caption = 'L'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -340,7 +340,7 @@ object Enigma2: TEnigma2
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'm_btnF'
+    Caption = 'F'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -355,7 +355,7 @@ object Enigma2: TEnigma2
     Top = 84
     Width = 33
     Height = 25
-    Caption = 'm_btnG'
+    Caption = 'G'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -370,7 +370,7 @@ object Enigma2: TEnigma2
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'm_btnZ'
+    Caption = 'Z'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -385,7 +385,7 @@ object Enigma2: TEnigma2
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'm_btnC'
+    Caption = 'C'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -400,7 +400,7 @@ object Enigma2: TEnigma2
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'm_btnV'
+    Caption = 'V'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -415,7 +415,7 @@ object Enigma2: TEnigma2
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'm_btnN'
+    Caption = 'N'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
@@ -430,7 +430,7 @@ object Enigma2: TEnigma2
     Top = 116
     Width = 33
     Height = 25
-    Caption = 'm_btnM'
+    Caption = 'M'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clMenuText
     Font.Height = -16
