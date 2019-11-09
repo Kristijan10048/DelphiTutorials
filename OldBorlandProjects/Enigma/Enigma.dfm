@@ -2,7 +2,7 @@ object Enigma2: TEnigma2
   Left = -6
   Top = 142
   Caption = 'Enigma'
-  ClientHeight = 391
+  ClientHeight = 390
   ClientWidth = 742
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,7 +12,6 @@ object Enigma2: TEnigma2
   Font.Style = [fsBold]
   OldCreateOrder = False
   Visible = True
-  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 20
   object Label1: TLabel
@@ -513,7 +512,7 @@ object Enigma2: TEnigma2
     TabOrder = 34
   end
   object texiz: TEdit
-    Left = 24
+    Left = 29
     Top = 272
     Width = 705
     Height = 25
@@ -540,7 +539,7 @@ object Enigma2: TEnigma2
     OnClick = m_rbxDecrClick
   end
   object texvl: TEdit
-    Left = 24
+    Left = 29
     Top = 208
     Width = 705
     Height = 28

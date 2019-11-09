@@ -22,7 +22,7 @@ type
   /// </remarks>
   TEnigma2 = class(TForm)
 
-  protected
+
     {$Region 'UI Members'}
 
     Label1: TLabel;
@@ -83,7 +83,6 @@ type
     procedure m_btnCClick(Sender: TObject);
     procedure m_btnNClick(Sender: TObject);
     procedure m_btnMClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
     procedure m_btnSpaceClick(Sender: TObject);
     procedure m_btnResetClick(Sender: TObject);
     procedure m_btnNum1Click(Sender: TObject);
@@ -161,11 +160,11 @@ if (sd = false) then
 
 end;
 
-procedure TEnigma2.FormCreate(Sender: TObject);
-begin
-  //TODO:Init form
-  //ShowMessage('Enigma by Kris');
-end;
+//procedure TEnigma2.FormCreate1(Sender: TObject);
+//begin
+//  //TODO:Init form
+//  //ShowMessage('Enigma by Kris');
+//end;
 
 {$region 'Buttons Callbacks'}
 procedure TEnigma2.m_btnStartClick(Sender: TObject);
