@@ -22,6 +22,7 @@ type
   /// </remarks>
   TEnigma2 = class(TForm)
 
+  protected
     {$Region 'UI Members'}
 
     Label1: TLabel;
