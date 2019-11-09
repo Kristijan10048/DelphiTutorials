@@ -7,6 +7,19 @@ uses
   Dialogs, StdCtrls;
 
 type
+   /// <summary>
+  ///   Removes the specified item from the collection
+  /// </summary>
+  /// <param name="Item">The item to remove
+  ///
+  /// </param>
+  /// <param name="Collection">The group containing the item
+  /// </param>
+  ///
+  /// <remarks>
+  /// If parameter "Item" is null, an exception is raised.
+  /// <see cref="EArgumentNilException"/>
+  /// </remarks>
   TEnigma2 = class(TForm)
     Label1: TLabel;
     Label2: TLabel;
@@ -15,11 +28,11 @@ type
     StaticText2: TStaticText;
     StaticText3: TStaticText;
     StaticText4: TStaticText;
-    StaticText5: TStaticText;
-    StaticText6: TStaticText;
+    m_lblOutputText: TStaticText;
+    m_lblInputText: TStaticText;
     texiz: TEdit;
-    sifriranje: TRadioButton;
-    desif: TRadioButton;
+    m_rbxEncr: TRadioButton;
+    m_rbxDecr: TRadioButton;
     texvl: TEdit;
     m_btnSpace: TButton;
     m_btnReset: TButton;
@@ -34,35 +47,37 @@ type
     m_btnNum9: TButton;
     m_btnNum0: TButton;
 
+    {$region 'Procedures'}
+
     procedure m_btnStartClick(Sender: TObject);
-    procedure AClick(Sender: TObject);
-    procedure BClick(Sender: TObject);
-    procedure QClick(Sender: TObject);
-    procedure WClick(Sender: TObject);
-    procedure sifriranjeClick(Sender: TObject);
-    procedure desifClick(Sender: TObject);
-    procedure EClick(Sender: TObject);
-    procedure RClick(Sender: TObject);
-    procedure TClick(Sender: TObject);
-    procedure YClick(Sender: TObject);
-    procedure UClick(Sender: TObject);
-    procedure IClick(Sender: TObject);
-    procedure OClick(Sender: TObject);
-    procedure PClick(Sender: TObject);
-    procedure SClick(Sender: TObject);
-    procedure DClick(Sender: TObject);
-    procedure FClick(Sender: TObject);
-    procedure GClick(Sender: TObject);
+    procedure m_btnAClick(Sender: TObject);
+    procedure m_btnBClick(Sender: TObject);
+    procedure m_btnQClick(Sender: TObject);
+    procedure m_btnWClick(Sender: TObject);
+    procedure m_rbxEncrClick(Sender: TObject);
+    procedure m_rbxDecrClick(Sender: TObject);
+    procedure m_btnEClick(Sender: TObject);
+    procedure m_btnRClick(Sender: TObject);
+    procedure m_btnTClick(Sender: TObject);
+    procedure m_btnYClick(Sender: TObject);
+    procedure m_btnUClick(Sender: TObject);
+    procedure m_btnIClick(Sender: TObject);
+    procedure m_btnOClick(Sender: TObject);
+    procedure m_btnPClick(Sender: TObject);
+    procedure m_btnSClick(Sender: TObject);
+    procedure m_btnDClick(Sender: TObject);
+    procedure m_btnFClick(Sender: TObject);
+    procedure m_btnGClick(Sender: TObject);
     procedure m_btnKeyHClick(Sender: TObject);
     procedure m_btnKeyJClick(Sender: TObject);
-    procedure VClick(Sender: TObject);
-    procedure KClick(Sender: TObject);
-    procedure LClick(Sender: TObject);
-    procedure ZClick(Sender: TObject);
-    procedure XClick(Sender: TObject);
-    procedure CClick(Sender: TObject);
-    procedure NClick(Sender: TObject);
-    procedure MClick(Sender: TObject);
+    procedure m_btnVClick(Sender: TObject);
+    procedure m_btnKClick(Sender: TObject);
+    procedure m_btnLClick(Sender: TObject);
+    procedure m_btnZClick(Sender: TObject);
+    procedure m_btnXClick(Sender: TObject);
+    procedure m_btnCClick(Sender: TObject);
+    procedure m_btnNClick(Sender: TObject);
+    procedure m_btnMClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure m_btnSpaceClick(Sender: TObject);
     procedure m_btnResetClick(Sender: TObject);
@@ -76,16 +91,19 @@ type
     procedure m_btnNum8Click(Sender: TObject);
     procedure m_btnNum9Click(Sender: TObject);
     procedure m_btnNum0Click(Sender: TObject);
+
+     {$endregion}
   private
     { Private declarations }
   public
     { Public declarations }
   end;
 const
-s0='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
-s1='M5NB1V2CXZ3AS4DFGH7JK8L9POI6UYTR_E0WQ';
+  s0='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
+  s1='M5NB1V2CXZ3AS4DFGH7JK8L9POI6UYTR_E0WQ';
 var
   Enigma2: TEnigma2;
+
   str,str1:string[37];
   textvl,encr,decr:string;
   pom,pom1:char;
@@ -98,19 +116,20 @@ procedure rot(v:char);
 begin
 if sd=true then
         begin
-         pom:=str[1];
-         for i:=1 to 36 do
-         str[i]:=str[i+1];
+         pom := str[1];
+         for i := 1 to 36 do
+          str[i] := str[i + 1];
          str[37]:=pom;
 
          pom:=str1[37];
          for i:=37 downto 2 do
-         str1[i]:=str1[i-1];
+          str1[i]:=str1[i-1];
          str1[1]:=pom;
 
-         poz:=1;
+         poz := 1;
          for i:=1 to 37 do
-         if str[i]=v then poz:=i;
+          if str[i]=v then
+            poz:=i;
 end;
 
 if sd=false then
@@ -131,6 +150,8 @@ if sd=false then
        end;
 
 end;
+
+{$region 'Buttons Callbacks'}
 procedure TEnigma2.m_btnStartClick(Sender: TObject);
 begin
 encr:='';
@@ -141,7 +162,7 @@ texvl.Text:='';
 textvl:='';
 end;
 
-procedure TEnigma2.AClick(Sender: TObject);
+procedure TEnigma2.m_btnAClick(Sender: TObject);
 begin
 rot('A');
 
@@ -155,7 +176,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.BClick(Sender: TObject);
+procedure TEnigma2.m_btnBClick(Sender: TObject);
 begin
 rot('B');
 
@@ -169,7 +190,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.QClick(Sender: TObject);
+procedure TEnigma2.m_btnQClick(Sender: TObject);
 begin
 rot('Q');
 
@@ -183,7 +204,8 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 
 end;
-procedure TEnigma2.WClick(Sender: TObject);
+
+procedure TEnigma2.m_btnWClick(Sender: TObject);
 begin
 
 rot('W');
@@ -199,21 +221,22 @@ texiz.text:=encr;
 
 
 end;
-procedure TEnigma2.sifriranjeClick(Sender: TObject);
+
+procedure TEnigma2.m_rbxEncrClick(Sender: TObject);
 begin
 str:=s0;
 str1:=s1;
 sd:=true;
 end;
 
-procedure TEnigma2.desifClick(Sender: TObject);
+procedure TEnigma2.m_rbxDecrClick(Sender: TObject);
 begin
 str:=s1;
 str1:=s0;
 sd:=false;
 end;
 
-procedure TEnigma2.EClick(Sender: TObject);
+procedure TEnigma2.m_btnEClick(Sender: TObject);
 begin
 rot('E');
 
@@ -228,7 +251,7 @@ texiz.text:=encr;
 
 end;
 
-procedure TEnigma2.RClick(Sender: TObject);
+procedure TEnigma2.m_btnRClick(Sender: TObject);
 begin
 rot('R');
 
@@ -243,7 +266,7 @@ texiz.text:=encr;
 
 end;
 
-procedure TEnigma2.TClick(Sender: TObject);
+procedure TEnigma2.m_btnTClick(Sender: TObject);
 begin
 rot('T');
 
@@ -257,7 +280,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.YClick(Sender: TObject);
+procedure TEnigma2.m_btnYClick(Sender: TObject);
 begin
 rot('Y');
 
@@ -271,7 +294,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.UClick(Sender: TObject);
+procedure TEnigma2.m_btnUClick(Sender: TObject);
 begin
 rot('U');
 
@@ -285,7 +308,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.IClick(Sender: TObject);
+procedure TEnigma2.m_btnIClick(Sender: TObject);
 begin
 rot('I');
 
@@ -299,7 +322,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.OClick(Sender: TObject);
+procedure TEnigma2.m_btnOClick(Sender: TObject);
 begin
 rot('O');
 
@@ -314,7 +337,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.PClick(Sender: TObject);
+procedure TEnigma2.m_btnPClick(Sender: TObject);
 begin
 rot('P');
 
@@ -328,7 +351,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.SClick(Sender: TObject);
+procedure TEnigma2.m_btnSClick(Sender: TObject);
 begin
 rot('S');
 
@@ -342,7 +365,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.DClick(Sender: TObject);
+procedure TEnigma2.m_btnDClick(Sender: TObject);
 begin
 rot('D');
 
@@ -356,7 +379,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.FClick(Sender: TObject);
+procedure TEnigma2.m_btnFClick(Sender: TObject);
 begin
 rot('F');
 
@@ -370,7 +393,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.GClick(Sender: TObject);
+procedure TEnigma2.m_btnGClick(Sender: TObject);
 begin
 rot('G');
 
@@ -412,7 +435,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.VClick(Sender: TObject);
+procedure TEnigma2.m_btnVClick(Sender: TObject);
 begin
 rot('v');
 label2.Caption:=str1;
@@ -426,7 +449,7 @@ texiz.text:=encr;
 
 end;
 
-procedure TEnigma2.KClick(Sender: TObject);
+procedure TEnigma2.m_btnKClick(Sender: TObject);
 begin
 rot('K');
 
@@ -440,7 +463,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.LClick(Sender: TObject);
+procedure TEnigma2.m_btnLClick(Sender: TObject);
 begin
 rot('L');
 
@@ -454,7 +477,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.ZClick(Sender: TObject);
+procedure TEnigma2.m_btnZClick(Sender: TObject);
 begin
 rot('Z');
 
@@ -468,7 +491,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.XClick(Sender: TObject);
+procedure TEnigma2.m_btnXClick(Sender: TObject);
 begin
 rot('X');
 
@@ -482,7 +505,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.CClick(Sender: TObject);
+procedure TEnigma2.m_btnCClick(Sender: TObject);
 begin
 rot('C');
 
@@ -496,7 +519,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.NClick(Sender: TObject);
+procedure TEnigma2.m_btnNClick(Sender: TObject);
 begin
 rot('N');
 
@@ -510,7 +533,7 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
-procedure TEnigma2.MClick(Sender: TObject);
+procedure TEnigma2.m_btnMClick(Sender: TObject);
 begin
 rot('M');
 
@@ -713,4 +736,5 @@ encr:=encr+str1[poz];
 texiz.text:=encr;
 end;
 
+{$endregion}
 end.
