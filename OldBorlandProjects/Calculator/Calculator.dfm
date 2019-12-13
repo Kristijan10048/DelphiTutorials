@@ -3,8 +3,8 @@ object Form1: TForm1
   Top = 259
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Calculator'
-  ClientHeight = 280
-  ClientWidth = 466
+  ClientHeight = 296
+  ClientWidth = 472
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -39,8 +39,8 @@ object Form1: TForm1
   OldCreateOrder = False
   OnCreate = FormCreate
   DesignSize = (
-    466
-    280)
+    472
+    296)
   PixelsPerInch = 96
   TextHeight = 13
   object GroupBox1: TGroupBox
@@ -139,8 +139,8 @@ object Form1: TForm1
     end
   end
   object Edit1: TEdit
-    Left = 8
-    Top = 24
+    Left = 14
+    Top = 26
     Width = 457
     Height = 25
     Anchors = [akRight]
@@ -161,11 +161,13 @@ object Form1: TForm1
       '                                                                ' +
       '                                                                ' +
       '                    0'
+    ExplicitLeft = 8
+    ExplicitTop = 24
   end
   object ActionMainMenuBar1: TActionMainMenuBar
     Left = 0
     Top = 0
-    Width = 466
+    Width = 472
     Height = 25
     UseSystemFont = False
     ActionManager = ActionManager1
@@ -182,6 +184,7 @@ object Form1: TForm1
     Font.Name = 'Segoe UI'
     Font.Style = []
     Spacing = 0
+    ExplicitWidth = 466
   end
   object GroupBox3: TGroupBox
     Left = 8
@@ -207,8 +210,8 @@ object Form1: TForm1
     end
   end
   object Panel1: TPanel
-    Left = 136
-    Top = 104
+    Left = 138
+    Top = 111
     Width = 33
     Height = 25
     Anchors = []
@@ -216,6 +219,8 @@ object Form1: TForm1
     BiDiMode = bdRightToLeftNoAlign
     ParentBiDiMode = False
     TabOrder = 5
+    ExplicitLeft = 136
+    ExplicitTop = 104
   end
   object BitBtn1: TBitBtn
     Left = 272
@@ -690,8 +695,8 @@ object Form1: TForm1
     TabOrder = 38
   end
   object Panel2: TPanel
-    Left = 184
-    Top = 104
+    Left = 187
+    Top = 111
     Width = 33
     Height = 25
     Anchors = []
@@ -699,6 +704,8 @@ object Form1: TForm1
     BiDiMode = bdRightToLeftNoAlign
     ParentBiDiMode = False
     TabOrder = 39
+    ExplicitLeft = 184
+    ExplicitTop = 104
   end
   object BitBtn34: TBitBtn
     Left = 184
