@@ -1,0 +1,22 @@
+ BEGIN
+        TCPCLIENT.WriteLn('DOWNLOAD');
+        smsg:=emsg.Text;
+        i:=length(emsg.Text);
+        p:='';
+        while smsg[i]<>'\' do
+         i:=i-1;
+        for j:=i to length(smsg) do
+         p:=p+smsg[j];
+        label4.Caption:=getcurrentdir+p;
+        if fileexists(getcurrentdir+p)= false then
+           begin
+            TCPCLIENT.WriteLn(EMSG.Text);
+            assignfile(F,getcurrentdir+'.TMP');
+            rewrite(F,1);
+            REPEAT
+             TX:=TCPCLIENT.ReadLn;
+             write(T,TX);
+            UNTIL TCPCLIENT.ReadLn<>'';
+            closefile(F);
+           end;
+       END;
