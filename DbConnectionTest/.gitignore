@@ -1,2 +1,5 @@
 *.dfm
 /Win32/
+*.vlb
+*.dproj.local
+*.identcache
