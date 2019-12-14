@@ -1,2 +1,4 @@
 *.identcache
 /__history/
+*.dproj.local
+*.ico
