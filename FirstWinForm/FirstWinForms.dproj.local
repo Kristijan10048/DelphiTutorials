@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/09/15 09:57:31.000.265,=C:\Users\Kristijan\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/15 09:58:55.000.734,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\SecondForm.dfm=C:\Users\Kristijan\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019/09/15 09:58:55.000.734,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\SecondForm.pas=C:\Users\Kristijan\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/09/15 09:59:07.000.327,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\FirstWinForms.dproj=C:\Users\Kristijan\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/09/15 10:01:56.000.356,=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\FirstWinForm.pas</Transaction>
+    <Transaction>2019/09/15 10:33:57.000.395,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\ImagesViewer.pas=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\FirstWinForm.pas</Transaction>
+    <Transaction>2019/09/15 10:33:57.000.395,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\ImagesViewer.dfm=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\FirstWinForm.dfm</Transaction>
+    <Transaction>2019/09/15 10:49:48.000.176,=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\Unit1.pas</Transaction>
+    <Transaction>2019/09/15 10:50:36.000.870,=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\Unit1.pas</Transaction>
+    <Transaction>2019/09/15 11:00:21.000.603,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\MyFirstClass.pas=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\Unit1.pas</Transaction>
+    <Transaction>2019/09/15 15:50:59.000.937,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\MainForm.pas=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\SecondForm.pas</Transaction>
+    <Transaction>2019/09/15 15:50:59.000.937,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\MainForm.dfm=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\SecondForm.dfm</Transaction>
+    <Transaction>2019/09/15 15:51:19.000.700,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\TemplateClass.pas=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\MyFirstClass.pas</Transaction>
+    <Transaction>2019/09/15 15:51:51.000.539,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\CAppTemplateClass.pas=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\TemplateClass.pas</Transaction>
+    <Transaction>2019/09/15 15:52:06.000.594,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\CUiMainForm.dfm=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\MainForm.dfm</Transaction>
+    <Transaction>2019/09/15 15:52:06.000.594,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\CUiMainForm.pas=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\MainForm.pas</Transaction>
+    <Transaction>2019/09/15 15:53:43.000.458,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\CUiImagesViewer.dfm=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\ImagesViewer.dfm</Transaction>
+    <Transaction>2019/09/15 15:53:43.000.458,D:\Repository\GitHub\DelphiTutorials\FirstWinForm\CUiImagesViewer.pas=D:\Repository\GitHub\DelphiTutorials\FirstWinForm\ImagesViewer.pas</Transaction>
+  </Transactions>
+</BorlandProject>
