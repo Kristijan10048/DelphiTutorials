@@ -1,3 +1,17 @@
 /OldBorlandProjects/Enigma/__history/
 /FirstWinForm/Win32/Debug/
 *.exe
+*.~dfm
+*.res
+*.dcu
+*.exe
+*.ddp
+*.dfm.~4~
+/DbConnectionTest/__recovery/
+/DbConnectionTest/__history/
+*.~pas
+*.~dpr
+*.~ddp
+*.pas.~1~
+*.dfm.~1~
+*.dpr.~1~
