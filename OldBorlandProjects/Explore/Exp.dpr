@@ -1,8 +1,8 @@
-program Enigma1;
+program Exp;
 
 uses
   Forms,
-  Enigma in 'Enigma.pas' {Form1};
+  Explore in 'Explore.pas' {Form1};
 
 {$R *.res}
 
