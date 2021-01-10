@@ -1,2 +1,10 @@
 *.dfm.~1~
 *.pas.~1~
+/OldBorlandProjects/ChangeFileDateAtribute/filedate.~dfm
+/OldBorlandProjects/ChangeFileDateAtribute/fd.exe
+*.~dfm
+*.~ddp
+*.exe
+*.~dpr
+*.dcu
+/DbConnectionTest/__history/
